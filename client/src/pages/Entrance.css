@@ -1,0 +1,10 @@
+body{
+    /* background-color: white; */
+    background-image: url(../assets/greensky.jpg);
+    background-size: cover;
+    justify-self: center;
+    padding-top: 10%;
+    background-position: center top;
+    background-blend-mode: screen;
+
+}

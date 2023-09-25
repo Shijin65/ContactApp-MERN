@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+  
+}
+
+.maindiv{
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;c */
+  min-height: 90vh;
+  /* max-height: auto; */
+}
+@media (max-width: 767px) {
+  .w-50 {
+    width: 100%;
+    max-width: none; /* Remove the maximum width constraint */
+
+  }
+}
