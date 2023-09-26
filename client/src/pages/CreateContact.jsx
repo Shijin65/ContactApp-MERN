@@ -25,7 +25,7 @@ const handlechange=(event)=>{
 }
 const handleSubmit = async(event) => {
   event.preventDefault();
-  const res = await fetch(`http://localhost:8001/api/contact`,{
+  const res = await fetch(`https://contactapp-mern.onrender.com/api/contact`,{
                 method:"POST",
                 headers:{"content-type":"application/json",
                 Authorization : `Bearer ${localStorage.getItem("auth")}`

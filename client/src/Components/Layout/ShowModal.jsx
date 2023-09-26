@@ -13,7 +13,7 @@ function ShowModal(props) {
 
 //DELETE CONTACT//---------------------------------------------------
 
-      const res = await fetch(`http://localhost:8001/api/contact/${id}`,
+      const res = await fetch(`https://contactapp-mern.onrender.com/api/contact/${id}`,
         {
           method: "DELETE",
           headers: {

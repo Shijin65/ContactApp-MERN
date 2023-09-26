@@ -44,11 +44,9 @@ const createcontact = asyncHanler(async (req,res)=>{
     }
 
     const numberexist = await Contact.findOne({ phone });
-    const emailexist = await Contact.findOne({ email});
-    const usernameexist = await Contact.findOne({ name });
 
 
-    if (!numberexist , !emailexist, !usernameexist ) {
+    if (!numberexist) {
         const contact = await Contact.create({
         name,
         email,

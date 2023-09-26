@@ -24,7 +24,7 @@ export const Authcontextprovider = ({ children }) => {
   const currentUser = async()=>{
 
     try {
-      const res = await fetch(`http://localhost:8001/api/user/current`,{
+      const res = await fetch(`https://contactapp-mern.onrender.com/api/user/current`,{
         method:"GET",
         headers:{ Authorization : `Bearer ${localStorage.getItem("auth")}`},
     })
@@ -64,7 +64,7 @@ export const Authcontextprovider = ({ children }) => {
         console.log(userData)
 
         try {
-            const res = await fetch(`http://localhost:8001/api/user/login`,{
+            const res = await fetch(`https://contactapp-mern.onrender.com/api/user/login`,{
                 method:"POST",
                 headers:{"content-type":"application/json",
             },
@@ -96,7 +96,7 @@ export const Authcontextprovider = ({ children }) => {
   const RegisterUser = async(userData)=>{
 // console.log(userData)
 try {
-  const res = await fetch(`http://localhost:8001/api/user/register`,{
+  const res = await fetch(`https://contactapp-mern.onrender.com/api/user/register`,{
                 method:"POST",
                 headers:{"content-type":"application/json",
             },
