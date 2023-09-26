@@ -17,7 +17,7 @@ function ShowContact() {
 
         async function fetchData() {
             try {
-                const res = await fetch(`http://localhost:8001/api/contact`, {
+                const res = await fetch(`https://contactapp-mern.onrender.com/api/contact`, {
                     method: "GET",
                     headers: { "Authorization": `Bearer ${localStorage.getItem("auth")}` },
                 })
